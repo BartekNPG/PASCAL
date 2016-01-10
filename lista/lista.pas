@@ -204,8 +204,6 @@ var
   moved : boolean;
 begin
      moved := true;
-     //for i:=0 to counter+10 do
-     //begin
      repeat
      if moved then tmp := Head;
      begin
