@@ -6,18 +6,18 @@
     <BuildModes Active="Default"/>
     <Units Count="2">
       <Unit0>
-        <Filename Value="kolejka.pas"/>
+        <Filename Value="listafpgl.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="49"/>
-        <CursorPos Y="66"/>
+        <TopLine Value="13"/>
+        <CursorPos X="21" Y="38"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="lista\lista.pas"/>
+        <Filename Value="kolejka.pas"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="214"/>
+        <TopLine Value="34"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit1>
