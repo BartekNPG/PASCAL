@@ -25,24 +25,24 @@ var
 begin
   MyList := TIntegerList.Create;
   Randomize;
-  for i:=0 to 19 do
-      MyList.Add(Random(19));
-  for i:=0 to MyList.Count-1 do
-      Write(MyList.Items[i],', ');
+  for i:=0 to 1373000 do
+      MyList.Add(Random(1931));
+  //for i:=0 to MyList.Count-1 do
+  //    Write(MyList.Items[i],', ');
   writeln();
   MyList.Sort(@Comparer);
-
-  for i:=0 to MyList.Count-1 do
-      Write(MyList.Items[i],', ');
+  writeln('done');
+  //for i:=0 to MyList.Count-1 do
+  //    Write(MyList.Items[i],', ');
   readln();
   //usuwa ostatni(e) element
   MyList.Delete(MyList.Count-1);
   MyList.Delete(MyList.Count-1);
   MyList.Delete(MyList.Count-1);
 
-  for i:=0 to MyList.Count-1 do
-      Write(MyList.Items[i],', ');
-  readln();
+  //for i:=0 to MyList.Count-1 do
+  //    Write(MyList.Items[i],', ');
+  //readln();
 
 end.
 

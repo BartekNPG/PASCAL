@@ -4,24 +4,22 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="5">
       <Unit0>
         <Filename Value="lista.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="372"/>
-        <CursorPos X="28" Y="391"/>
-        <FoldState Value=" TCCC4 T3L0G023 pj8kV0Q3q"/>
-        <UsageCount Value="27"/>
+        <TopLine Value="103"/>
+        <CursorPos Y="75"/>
+        <FoldState Value=" TCCC4 T3L0G041Z"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="..\..\..\stos\listadwukierunkowa.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="148"/>
         <CursorPos X="30" Y="115"/>
         <UsageCount Value="13"/>
-        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\..\project1.lpr"/>
@@ -29,6 +27,23 @@
         <TopLine Value="21"/>
         <UsageCount Value="10"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="..\listadwukierunkowa.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="134"/>
+        <CursorPos X="9" Y="125"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\listafpgl.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="17"/>
+        <CursorPos X="20" Y="28"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>

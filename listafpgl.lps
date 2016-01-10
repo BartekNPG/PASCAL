@@ -8,25 +8,23 @@
       <Unit0>
         <Filename Value="listafpgl.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="13"/>
-        <CursorPos X="21" Y="38"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="17"/>
+        <CursorPos X="17" Y="28"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="kolejka.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="34"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="doskonale.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="8" Y="21"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit2>
     </Units>
     <JumpHistory HistoryIndex="-1"/>

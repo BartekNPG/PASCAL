@@ -9,9 +9,11 @@ begin
 write('Podaj wysokosc trojkata: ');
 readln(h);
 
-for i := 0 to h do begin
+for i := 0 to h do
+begin
     tab[i] := 1;
-    for j := i-1 downto 1 do begin
+    for j := i-1 downto 1 do
+    begin
         tab[j] := tab[j] + tab[j-1];
     end;
     if i mod 2 = 1 then

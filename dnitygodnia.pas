@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Classes
+  Classes, sysutils
   { you can add units after this };
 
 function GetDay(d,m,y: integer): integer;
@@ -30,6 +30,8 @@ begin
 end;
 
 var i, j, ileDni: integer;
+  date : TDateTime;
+  rok, miesiac, ilosc : integer;
 
 begin
   ileDni:=0;
@@ -42,7 +44,22 @@ begin
           end;
   writeln('w sumie: ',ileDni);
   readln();
-
+  writeln('---------------------');
+  ilosc :=0;
+  for rok:=2007 to 2020 do
+      begin
+        for miesiac:=1 to 12 do
+            begin
+              date := EncodeDate(rok,miesiac,13);
+              if DayOfWeek(date) = 6 then
+              begin
+                inc(ilosc);
+                writeln(13,'.',miesiac,'.',rok);
+              end;
+            end;
+      end;
+   writeln('w sumie: ', ilosc);
+   readln();
 
 end.
 

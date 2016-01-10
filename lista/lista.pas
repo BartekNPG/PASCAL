@@ -69,113 +69,6 @@ begin
            writeln('index: ',tmp^.index,'> ',tmp^.value);
            tmp := tmp^.next;
      end;
-     //tmp := Tail;
-     //while tmp <> nil do
-     //begin
-     //writeln('(',tmp^.index,')> ',tmp^.value);
-     //tmp:=tmp^.prev;
-
-     //end;
-end;
-
-
-procedure swap(a, b : pItem);
-var
-  p, n : pItem;
-begin
-if (a=nil) OR (b=nil) then exit();
-
-
-   if a^.next=b then           //obok siebie
-    begin
-       a^.next:=b^.next;
-       b^.prev:=a^.prev;
-
-
-       if a^.next <> nil then
-          a^.next^.prev:=a;
-
-       if b^.prev <> nil then
-          b^.prev^.next:=b;
-
-       b^.next:=a;
-       a^.prev:=b;
-     end
-    else
-    begin
-         p := b^.prev;
-         n := b^.next;
-
-         b^.prev:=a^.prev;
-         b^.next:=a^.next;
-
-         a^.prev:=p;
-         a^.next:=n;
-
-         if (a^.next <> nil) then
-            a^.next^.prev := a;
-
-         if a^.prev <> nil then
-            a^.prev^.next := a;
-
-         if b^.next <> nil then
-            b^.next^.prev:=b;
-
-         if b^.prev <> nil then
-            b^.prev^.next:=b;
-    end;
-end;
-
-function getPointer(number :integer): pItem;
-var
-  item : pItem;
-begin
-    item := Head;
-    while (item^.value<> number) AND (item<>nil) do
-          item:=item^.next;
-
-    if item^.value=number then result:=item
-    else result := nil;
-end;
-
-procedure addWithSort(number: integer);
-
-  var nowy, tmp : pItem;
-
-begin
-   new(nowy);
-   nowy^.value := number;
-   nowy^.next:=nil;
-   nowy^.prev:=nil;
-   tmp := Head;
-
-   if Head=nil then
-   begin
-      Head := nowy;
-      Tail := nowy;
-   end
-   else
-   begin
-        while (nowy^.value>tmp^.value) do
-        if (tmp^.next<> nil) then
-           tmp:=tmp^.next
-        else
-        begin
-          tmp^.next:=nowy;
-          nowy^.prev:=tmp;
-          Tail:=nowy;
-
-       end;
-
-   end;
-       if tmp^.next=nil then
-       begin
-          tmp^.next:=nowy;
-          nowy^.prev:=tmp;
-          Tail:=nowy;
-       end;
-
-
 
 end;
 
@@ -276,20 +169,6 @@ begin
      while (tmp^.value<=item^.value) AND (tmp^.next<>nil) do
            tmp:=tmp^.next;
 
-     //if tmp^.next=nil then
-     //begin
-     //   tmp^.next:=item;
-     //   item^.prev:=tmp;
-     //   item^.next:=nil;
-     //   Tail := item;
-     //end
-     //else
-     //begin
-     //  n:=tmp^.next;
-     //  tmp^.next:=item;
-     //  item^.prev:=tmp;
-     //  item^.next:=n;
-     //end;
      if (tmp^.value>item^.value) then
      begin
        if tmp^.prev=nil then
