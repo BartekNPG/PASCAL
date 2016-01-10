@@ -4,16 +4,30 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="1">
+    <Units Count="3">
       <Unit0>
         <Filename Value="dnitygodnia.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="17"/>
         <CursorPos X="25" Y="36"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit0>
+      <Unit1>
+        <Filename Value="trojkat2.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="systemy.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="13"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit2>
     </Units>
     <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
